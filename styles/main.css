@@ -129,8 +129,8 @@ h6 {
   transition: 0.3s ease;
 }
 
-.box:hover > *,
-.box:hover::before {
+.box:hover:not(.box--blank):not(.box--arrow) > *,
+.box:hover:not(.box--blank):not(.box--arrow)::before {
   transform: translateY(calc(var(--box-hover-offset) * -1));
 }
 
@@ -174,8 +174,22 @@ h6 {
   }
 }
 
-.box--arrow-left {
+.box--arrow {
   transform: rotateY(180deg);
+}
+
+.box--arrow-left {
+  transform: rotateY(0deg);
+}
+
+@media screen and (min-width: 64rem) {
+  .box--arrow {
+    transform: rotateY(0);
+  }
+
+  .box--arrow-left {
+    transform: rotateY(180deg);
+  }
 }
 
 .box--arrow::before {
@@ -299,7 +313,6 @@ h6 {
   color: var(--black);
 
   padding: 1rem;
-  text-align: center;
 
   transform: translateY(100%);
 }
