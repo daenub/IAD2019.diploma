@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+}
+
+:root {
+  --jacksons-purple: #1f3c90;
+  --rio-grande: #b7cd00;
+}
+
+body {
+  height: auto;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+
+  border: 16px solid var(--jacksons-purple);
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  height: 100%;
+}
+
+.box {
+  position: relative;
+  padding-bottom: 100%;
+  background-color: #f4f4f4;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+}
+
+.name {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  color: var(--rio-grande);
+}
+
+.link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
