@@ -152,7 +152,7 @@ h6 {
 }
 
 .box--blank {
-  background-color: #1f3c90;
+  background-color: var(--rio-grande);
   opacity: 0.2;
   display: none;
 }
