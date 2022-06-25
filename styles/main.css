@@ -68,6 +68,7 @@ h6 {
 
 @media screen and (min-width: 40rem) {
   .title-box {
+    margin-top: 0;
     margin-bottom: 0;
     grid-column: 1 / span 6;
   }
@@ -75,6 +76,7 @@ h6 {
 
 @media screen and (min-width: 64rem) {
   .title-box {
+    margin-top: 0;
     margin-bottom: 0;
     grid-column: 1 / span 8;
   }
