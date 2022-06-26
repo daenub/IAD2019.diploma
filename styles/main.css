@@ -344,6 +344,8 @@ h6 {
 
 .students-list {
   grid-column: 1 / span 6;
+  list-style: none;
+  padding: 0;
 }
 
 .students-list--indent {
@@ -371,6 +373,11 @@ h6 {
     grid-column: 7 / span 2;
     margin-top: 3rem;
   }
+}
+
+.students-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
 }
 
 .copyright {
